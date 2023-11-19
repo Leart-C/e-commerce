@@ -237,7 +237,7 @@
   flex-wrap: wrap;
 }
 #section-holder .section-one {
-  width: 580px;
+  width: 600px;
   background-image: url(img/shoe-b-1.jpg);
   background-position: center;
   background-size: cover;
@@ -272,7 +272,7 @@
   transition: 0.5s ease;
 }
 #section-holder .section-two {
-  width: 580px;
+  width: 600px;
   background-image: url(img/shoe-b-2.jpg);
   background-position: center;
   background-size: cover;
@@ -307,42 +307,243 @@
   transition: 0.5s ease;
 }
 
-.footer{
+.footer {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background-color: #374d5b;
   padding: 20px 80px;
-
-  
 }
 
-.footer h1{
+.footer h1 {
   color: #fff;
 }
 
-.boxHolder{
+.boxHolder {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   line-height: 25px;
+  cursor: pointer;
 }
 
-.first-box span{
+.first-box span {
   color: white;
 }
 
-.icon ul{
+.icon ul {
   margin-top: 10px;
   width: 100px;
   justify-content: space-between;
   display: flex;
-
+  cursor: pointer;
 }
 
-.icon li{
+.icon li {
   list-style: none;
 }
 
+#stylist-outfit {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 80px;
+}
 
+#new-arrival {
+  padding: 20px 80px;
+  width: 100%;
+  height: 50vh;
+  background-image: url(img/newArrival.jpg);
+  background-repeat: no-repeat;
+  background-position: 20% 35%;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
+.new-one {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.new-one h4 {
+  color: #fff;
+}
+.new-one h1 {
+  font-size: 100px;
+  color: #fff;
+}
+.new-one span {
+  color: #fff;
+  padding-bottom: 20px;
+}
+.new-one button {
+  background-color: #fff;
+  color: rgb(231, 52, 52);
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.new-one button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+#best-choices {
+  width: 100%;
+  height: 85vh;
+  padding: 20px 80px;
+}
+#best-choices h1 {
+  padding: 30px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-holder {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-holder img {
+  width: 400px;
+  height: 400px;
+}
+
+.product-holder button {
+  margin-top: 10px;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-holder button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transition: 0.5s ease;
+}
+.prod1 button {
+  background-color: #efa71b;
+}
+.prod2 button {
+  background-color: #498dff;
+}
+.prod3 button {
+  background-color: #efcfd5;
+}
+
+#weeklyDeals {
+  width: 100%;
+  height: 70vh;
+  padding: 20px 80px;
+  background-repeat: no-repeat;
+  background-image: url(img/weeklyDeals.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.weeklyDealsOne {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.weeklyDealsOne h1 {
+  font-size: 50px;
+  color: #fff;
+}
+.weeklyDealsOne span {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.weeklyDealsOne button {
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+.weeklyDealsOne button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+#newsletter {
+  margin: 20px 0;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(img/newsletter.jpg);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  height: 25vh;
+}
+
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#newsletter p span {
+  color: #ffbd27;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  border: none;
+  border-radius: 5px;
+  background-color: #1ed5c9;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
