@@ -237,7 +237,7 @@
   flex-wrap: wrap;
 }
 #section-holder .section-one {
-  width: 580px;
+  width: 600px;
   background-image: url(img/shoe-b-1.jpg);
   background-position: center;
   background-size: cover;
@@ -272,7 +272,7 @@
   transition: 0.5s ease;
 }
 #section-holder .section-two {
-  width: 580px;
+  width: 600px;
   background-image: url(img/shoe-b-2.jpg);
   background-position: center;
   background-size: cover;
@@ -307,42 +307,50 @@
   transition: 0.5s ease;
 }
 
-.footer{
+.footer {
   width: 100%;
   height: 40vh;
   background-color: #374d5b;
   padding: 20px 80px;
-
-  
 }
 
-.footer h1{
+.footer h1 {
   color: #fff;
 }
 
-.boxHolder{
+.boxHolder {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   line-height: 25px;
+  cursor: pointer;
 }
 
-.first-box span{
+.first-box span {
   color: white;
 }
 
-.icon ul{
+.icon ul {
   margin-top: 10px;
   width: 100px;
   justify-content: space-between;
   display: flex;
-
+  cursor: pointer;
 }
 
-.icon li{
+.icon li {
   list-style: none;
 }
 
+#stylist-outfit {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 80px;
+}
 
 #stylist-outfit {
   width: 100%;
@@ -550,6 +558,32 @@
   cursor: pointer;
 }
 
+.new-one {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.new-one h4 {
+  color: #fff;
+}
+.new-one h1 {
+  font-size: 100px;
+  color: #fff;
+}
+.new-one span {
+  color: #fff;
+  padding-bottom: 20px;
+}
+.new-one button {
+  background-color: #fff;
+  color: rgb(231, 52, 52);
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 #aboutUs {
   padding: 20px 80px;
