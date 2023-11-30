@@ -587,16 +587,15 @@
 
 #aboutUs {
   padding: 20px 80px;
-
 }
 
-#aboutUs .holder{
+#aboutUs .holder {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#aboutUs .holder .holder1{
+#aboutUs .holder .holder1 {
   padding: 20px 80px;
   width: 500px;
   display: flex;
@@ -606,17 +605,17 @@
   color: #fff;
 }
 
-#aboutUs .holder .holder1 h4{
+#aboutUs .holder .holder1 h4 {
   padding-bottom: 10px;
 }
 
-#aboutUs .holder .holder1 .buttonHolder{
+#aboutUs .holder .holder1 .buttonHolder {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-#aboutUs .holder .holder1 .buttonHolder button{
+#aboutUs .holder .holder1 .buttonHolder button {
   width: 100px;
   height: 35px;
   border: none;
@@ -624,48 +623,47 @@
   cursor: pointer;
 }
 
-#aboutUs .holder .holder1 .buttonHolder button:hover{
+#aboutUs .holder .holder1 .buttonHolder button:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transition: 0.5s ease;
 }
 
-#aboutUs .holder .holder1 .buttonHolder ul{
+#aboutUs .holder .holder1 .buttonHolder ul {
   width: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#aboutUs .holder .holder1 .buttonHolder ul li{
+#aboutUs .holder .holder1 .buttonHolder ul li {
   list-style: none;
 }
 
-
-#aboutUs .holder .holder2{
+#aboutUs .holder .holder2 {
   width: 500px;
 }
 
-#aboutUs .holder .holder2 img{
+#aboutUs .holder .holder2 img {
   width: 100%;
 }
 
-#contactUs{
+#contactUs {
   width: 100%;
   padding: 50px 80px;
   height: 70vh;
   flex-wrap: wrap;
 }
 
-#contactUs .contactHolder{
+#contactUs .contactHolder {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
 }
 
-#contactUs .contactHolder .contact1{
+#contactUs .contactHolder .contact1 {
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -675,17 +673,120 @@
   border-radius: 5px;
 }
 
-#contactUs .contactHolder .contact1 .location{
+#contactUs .contactHolder .contact1 .location {
   display: flex;
   flex-direction: column;
 }
 
-#contactUs .contactHolder .contact1 iframe{
+#contactUs .contactHolder .contact1 iframe {
   width: 100%;
   height: 50%;
   margin-top: 10px;
 }
 
-#contactUs .contactHolder .contact2 form p{
+#contactUs .contactHolder .contact2 form p {
   margin-bottom: 15px;
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.container-box {
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.container-box header {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container-box form {
+  margin-top: 30px;
+}
+
+form .field {
+  margin-bottom: 20px;
+}
+
+form .input-field {
+  position: relative;
+  height: 55px;
+  width: 100%;
+}
+
+.input-field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid #d1d1d1;
+  padding: 0 15px;
+  border-radius: 8px;
+}
+
+.invalid input {
+  border-color: red;
+}
+
+.input-field .show-hide {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #919191;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.field .error {
+  display: flex;
+  align-items: center;
+  color: red;
+  margin-top: 10px;
+  font-size: 13px;
+  display: none;
+}
+
+.invalid .error {
+  display: flex;
+}
+
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.create-password .error {
+  align-items: flex-start;
+}
+
+.create-password .error-icon {
+  margin-top: 4px;
+}
+
+.button {
+  margin: 25px 0 6px;
+}
+.button input {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: blue;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input:hover {
+  background-color: #0e4bf1;
 }
