@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,9 +40,20 @@
           <a href="ContactUs.php">
             <li>Contact Us</li>
           </a>
-          <a href="Sign_up.php">
-            <li><i class="fa-solid fa-user"></i></li>
-          </a>
+          <?php if (isset($_SESSION['user_email'])): ?>
+            <li>Hello:
+              <?php echo $_SESSION['user_email']; ?>
+            </li>
+
+            <a href="logout.php">
+              <li> Logout</li>
+            </a>
+
+          <?php else: ?>
+            <a href="Login.php">
+              <li><i class="fa-solid fa-user"></i></li>
+            </a>
+          <?php endif; ?>
         </ul>
       </div>
     </div>
@@ -59,7 +74,7 @@
     <header>
       <img id="slideshow" src="./img/shoe1.jpg" />
     </header>
-    <button onclick="changeImg()">Next</button>
+    <button id="changeSlide">Next</button>
   </div>
 
 

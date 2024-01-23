@@ -48,49 +48,19 @@
   <div class="body">
     <div class="container-box">
       <header>Sign up</header>
-      <form action="Login.php">
-        <!-- first field email -->
-        <div class="field email-field">
-          <div class="input-field">
-            <input type="email" placeholder="Enter your email" class="email" />
-          </div>
-          <span class="error email-error">
-            <i class="bx bx-error-alt error-icon"></i>
-            <p class="error-text">Please enter a valid email</p>
-          </span>
-        </div>
-        <!-- second field create pass-->
-        <div class="field create-password">
-          <div class="input-field">
-            <input type="password" placeholder="Create Password" class="password" />
-            <i class="bx bx-hide show-hide"></i>
-          </div>
-          <span class="error password-error">
-            <i class="bx bx-error-alt error-icon"></i>
-            <p class="error-text">
-              Enter at least 8 char with number,symbol,small and capital
-              letter.
-            </p>
-          </span>
-        </div>
-        <!-- third field -->
-        <div class="field confirm-password">
-          <div class="input-field">
-            <input type="password" placeholder="Confirm Password" class="cPassword" />
-            <i class="bx bx-hide show-hide"></i>
-          </div>
-          <span class="error cPassword-error">
-            <i class="bx bx-error-alt error-icon"></i>
-            <p class="error-text">Password doesn't match</p>
-          </span>
-        </div>
-        <div class="input-field button">
-          <input type="submit" value="Submit" />
-        </div>
-        <div class="login-link">
-          <a href="Login.php">Login</a>
-        </div>
+
+      <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+        <input type="text" name="name" placeholder="name..."> <br><br>
+        <input type="text" name="surname" placeholder="surname..."> <br><br>
+        <input type="text" name="email" placeholder="email..."> <br><br>
+        <input type="text" name="username" placeholder="username..."><br><br>
+        <input type="text" name="password" placeholder="password..."><br><br>
+
+        <input type="submit" name="registerBtn" value="register"><br><br>
       </form>
+
+      <?php include_once './controller/registerController.php'; ?>
+
     </div>
   </div>
 
