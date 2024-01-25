@@ -21,14 +21,15 @@ class UserRepository
         $email = $user->getEmail();
         $username = $user->getUsername();
         $password = $user->getPassword();
+        $user_role = $user->getUserRole();
 
-        $sql = "INSERT INTO user (id,name,surname,email,username,password) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO user (id,name,surname,email,username,password,user_role) VALUES (?,?,?,?,?,?,?)";
 
         $statement = $conn->prepare($sql);
 
-        $statement->execute([$id, $name, $surname, $email, $username, $password]);
+        $statement->execute([$id, $name, $surname, $email, $username, $password, $user_role]);
 
-        echo "<script> alert('User has been inserted successfuly!'); </script>";
+        header('Location: Login.php');
     }
 
     function getAllUsers()

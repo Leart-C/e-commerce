@@ -1,65 +1,44 @@
+<?php
+  session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E commerce |Register Form</title>
+  <title>E commerce |Home</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+  <!-- navbar -->
 
-  <head>
-    <div class="navbar">
-      <div class="logo">
-        <h1>SneakPeak</h1>
-      </div>
-      <div class="nav-list">
-        <ul>
-          <a href="HomePage.php">
-            <li>Home</li>
-          </a>
-          <a href="About.php">
-            <li>About</li>
-          </a>
-          <a href="Products.php">
-            <li>Products</li>
-          </a>
-          <a href="News.php">
-            <li>News</li>
-          </a>
-          <a href="ContactUs.php">
-            <li>Contact Us</li>
-          </a>
-          <a href="Login.php">
-            <li><i class="fa-solid fa-user"></i></li>
-          </a>
-        </ul>
-      </div>
-    </div>
-  </head>
+  <?php include("./partials/header.php"); ?>
 
-  <!-- register start -->
-  <div class="body">
+  <!-- hero section -->
+
+  <div>
+ 
+
     <div class="container-box">
-      <header>Sign up</header>
+        <h1>Add Product</h1>
 
       <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+      
         <input type="text" name="name" placeholder="name..."> <br><br>
-        <input type="text" name="surname" placeholder="surname..."> <br><br>
-        <input type="text" name="email" placeholder="email..."> <br><br>
-        <input type="text" name="username" placeholder="username..."><br><br>
-        <input type="password" name="password" placeholder="password..."><br><br>
+        <input type="text" name="brand" placeholder="brand..."> <br><br>
+        <input type="text" name="price" placeholder="price..."> <br><br>
 
-        <input type="submit" name="registerBtn" value="register"><br><br>
+        <input type="submit" name="addProduct" value="Add "><br><br>
       </form>
 
-      <?php include_once './controller/registerController.php'; ?>
+      <?php include_once './controller/addProductController.php'; ?>
 
     </div>
   </div>
@@ -96,8 +75,9 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="index.js"></script>
 
-  <script src="index.js"></script>
 </body>
+
 
 </html>

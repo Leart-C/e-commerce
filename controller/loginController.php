@@ -20,7 +20,16 @@ if (isset($_POST['loginBtn'])) {
         $user = $userRepository->getUserByEmailAndPassword($email, $password);
 
         if ($user) {
-            $_SESSION['user_email'] = $user['email'];
+            $_SESSION['is_authenticated'] = true;
+            $_SESSION['authenticated_user'] = [
+                "id" => $user["id"],
+                "name" => $user["name"],    
+                "surname" =>$user['surname'],
+                "email" => $user["email"],  
+                "username"=>$user['username'],
+                "user_role"=>$user['user_role']
+            ];
+
             header('Location: HomePage.php');
         } else {
             echo 'Email or password is incorrect!';

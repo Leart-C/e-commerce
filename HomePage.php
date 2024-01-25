@@ -1,5 +1,6 @@
+
 <?php
-session_start();
+  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +18,7 @@ session_start();
 
 <body>
   <!-- navbar -->
+
 
   <head>
     <div class="navbar">
@@ -40,9 +42,9 @@ session_start();
           <a href="ContactUs.php">
             <li>Contact Us</li>
           </a>
-          <?php if (isset($_SESSION['user_email'])): ?>
+          <?php if (isset($_SESSION['authenticated_user']['email'])): ?>
             <li>Hello:
-              <?php echo $_SESSION['user_email']; ?>
+              <?php echo $_SESSION['authenticated_user']['email']; ?>
             </li>
 
             <a href="logout.php">
@@ -60,6 +62,15 @@ session_start();
   </head>
 
   <!-- hero section -->
+
+ 
+  <?php if (isset($_SESSION['authenticated_user']['user_role']) && $_SESSION['authenticated_user']['user_role'] === 'admin'): ?>
+    <div>
+      <a href="dashboard.php">
+        <li>Go to Dashboard</li>
+      </a>
+    </div>
+  <?php endif; ?>
 
   <div class="container">
     <h1>Good Shoes</h1>
