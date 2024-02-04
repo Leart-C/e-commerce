@@ -13,7 +13,8 @@
 
 <body>
 
-  <head>
+<?php include("./partials/header.php") ?>
+  <!-- <head>
     <div class="navbar">
       <div class="logo">
         <h1>SneakPeak</h1>
@@ -41,7 +42,7 @@
         </ul>
       </div>
     </div>
-  </head>
+  </head> -->
 
   <section id="aboutUs">
     <div class="holder">
@@ -68,7 +69,8 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <?php include("./partials/footer.php") ?>
+  <!-- <footer class="footer">
     <h1>SneakPeak</h1>
     <div class="boxHolder">
       <div class="first-box">
@@ -99,7 +101,7 @@
         <p>My Website</p>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 </html>

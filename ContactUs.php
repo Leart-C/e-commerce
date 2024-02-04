@@ -77,7 +77,8 @@ session_start();
     </div>
   </section>
 
-  <footer class="footer">
+  <?php include("./partials/footer.php") ?>
+  <!-- <footer class="footer">
     <h1>SneakPeak</h1>
     <div class="boxHolder">
       <div class="first-box">
@@ -108,7 +109,7 @@ session_start();
         <p>My Website</p>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 </html>

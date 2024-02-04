@@ -169,7 +169,9 @@ include_once './repository/userRepository.php';
             </div> -->
         </div>
     </div>
-
+    
+    <?php include("./partials/footer.php") ?>
+<!-- 
     <footer class="footer">
         <h1>SneakPeak</h1>
         <div class="boxHolder">
@@ -201,7 +203,7 @@ include_once './repository/userRepository.php';
                 <p>My Website</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
