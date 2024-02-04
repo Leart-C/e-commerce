@@ -43,7 +43,8 @@
     </div>
   </div>
 
-  <footer class="footer">
+  <?php include("./partials/footer.php")?>
+  <!-- <footer class="footer">
     <h1>SneakPeak</h1>
     <div class="boxHolder">
       <div class="first-box">
@@ -74,7 +75,7 @@
         <p>My Website</p>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <script type="text/javascript" src="index.js"></script>
 
 </body>
