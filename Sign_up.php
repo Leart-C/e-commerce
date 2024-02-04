@@ -14,35 +14,7 @@
 
 <body>
 
-  <head>
-    <div class="navbar">
-      <div class="logo">
-        <h1>SneakPeak</h1>
-      </div>
-      <div class="nav-list">
-        <ul>
-          <a href="HomePage.php">
-            <li>Home</li>
-          </a>
-          <a href="About.php">
-            <li>About</li>
-          </a>
-          <a href="Products.php">
-            <li>Products</li>
-          </a>
-          <a href="News.php">
-            <li>News</li>
-          </a>
-          <a href="ContactUs.php">
-            <li>Contact Us</li>
-          </a>
-          <a href="Login.php">
-            <li><i class="fa-solid fa-user"></i></li>
-          </a>
-        </ul>
-      </div>
-    </div>
-  </head>
+  <?php include("./partials/header.php") ?>
 
   <!-- register start -->
   <div class="body">
@@ -56,7 +28,7 @@
         <input type="text" name="username" placeholder="username..."><br><br>
         <input type="password" name="password" placeholder="password..."><br><br>
 
-        <input type="submit" name="registerBtn" value="register"><br><br>
+        <input type="submit" name="registerBtn" value="register"><br><br></>
         <a href="Login.php">Login</a>
       </form>
 

@@ -816,16 +816,3 @@ form .input-field {
 .container-box a {
   text-decoration: none;
 }
-
-.container-box-login {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.container-box-login {
-  background-color: lightblue;
-}

@@ -1,5 +1,5 @@
 <?php
-  session_start();
+session_start();
 ?>
 
 
@@ -18,7 +18,10 @@
 
 <body>
 
-  <head>
+  <?php include("./partials/header.php") ?>
+
+
+  <!-- <head>
     <div class="navbar">
       <div class="logo">
         <h1>SneakPeak</h1>
@@ -46,7 +49,7 @@
         </ul>
       </div>
     </div>
-  </head>
+  </head> -->
 
   <section id="contactUs">
     <div class="contactHolder">

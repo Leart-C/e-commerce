@@ -1,6 +1,4 @@
-
-
-<?php session_start(); 
+<?php session_start();
 
 
 include_once './repository/productRepository.php';
@@ -24,74 +22,46 @@ include_once './repository/userRepository.php';
 
 <body>
 
-    <head>
-        <div class="navbar">
-            <div class="logo">
-                <h1>SneakPeak</h1>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <a href="HomePage.php">
-                        <li>Home</li>
-                    </a>
-                    <a href="About.php">
-                        <li>About</li>
-                    </a>
-                    <a href="Products.php">
-                        <li>Products</li>
-                    </a>
-                    <a href="News.php">
-                        <li>News</li>
-                    </a>
-                    <a href="ContactUs.php">
-                        <li>Contact Us</li>
-                    </a>
-                    <a href="Sign_up.php">
-                        <li><i class="fa-solid fa-user"></i></li>
-                    </a>
-                </ul>
-            </div>
-        </div>
-    </head>
+    <?php include("./partials/header.php") ?>
 
     <div id="product1">
-            <?php if (isset($_SESSION['is_authenticated'])): ?>
-         
+        <?php if (isset($_SESSION['is_authenticated'])): ?>
+
             <a href="add-product.php">
                 Add product
             </a>
 
-          <?php endif; ?>
+        <?php endif; ?>
         <h1>Products</h1>
         <p>Summer Collection</p>
         <div class="pro-container">
 
-        <?php
+            <?php
             $productRepository = new ProductRepository();
             $userRepository = new UserRepository();
             $products = $productRepository->getProducts();
 
-            foreach($products as $product) {
+            foreach ($products as $product) {
                 $user = $userRepository->getUserById($product['user_id']);
 
                 echo '<div class="pro">
                         <img src="img/shoe1.jpg" alt="" />
                         <div class="des">
                             <span>' . $product["brand"] . '</span>
-                            <h5>'. $product['name'] .'</h5>
+                            <h5>' . $product['name'] . '</h5>
                             <div class="star">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
-                            <h4>$'.$product['price'].'</h4>
+                            <h4>$' . $product['price'] . '</h4>
                         </div>
 
-                        <div>Added by: '.$user['name']. ' ' . $user['surname'].'</div>
+                        <div>Added by: ' . $user['name'] . ' ' . $user['surname'] . '</div>
                     </div>';
             }
-        ?>
+            ?>
             <!-- <div class="pro">
                 <img src="img/nike4.jpg" alt="" />
                 <div class="des">

@@ -13,35 +13,7 @@
 
 <body>
 
-  <head>
-    <div class="navbar">
-      <div class="logo">
-        <h1>SneakPeak</h1>
-      </div>
-      <div class="nav-list">
-        <ul>
-          <a href="HomePage.php">
-            <li>Home</li>
-          </a>
-          <a href="About.php">
-            <li>About</li>
-          </a>
-          <a href="Products.php">
-            <li>Products</li>
-          </a>
-          <a href="News.php">
-            <li>News</li>
-          </a>
-          <a href="ContactUs.php">
-            <li>Contact Us</li>
-          </a>
-          <a href="Sign_up.php">
-            <li><i class="fa-solid fa-user"></i></li>
-          </a>
-        </ul>
-      </div>
-    </div>
-  </head>
+  <?php include("./partials/header.php") ?>
 
   <section id="stylist-outfit">
     <h2>Stylist Outfit</h2>
