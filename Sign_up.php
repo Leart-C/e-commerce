@@ -46,7 +46,7 @@
 
   <!-- register start -->
   <div class="body">
-    <div class="container-box">
+    <div class="container-box ">
       <header>Sign up</header>
 
       <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
@@ -57,6 +57,7 @@
         <input type="password" name="password" placeholder="password..."><br><br>
 
         <input type="submit" name="registerBtn" value="register"><br><br>
+        <a href="Login.php">Login</a>
       </form>
 
       <?php include_once './controller/registerController.php'; ?>

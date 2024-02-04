@@ -64,7 +64,7 @@
     <h1>Best Choices</h1>
     <div class="product-holder">
       <div class="prod1">
-        <img src="/img/newArrivalOne.jpg" alt="" />
+        <img src="img/newArrivalOne.jpg" alt="" />
         <button>Shop Now</button>
       </div>
       <div class="prod2">

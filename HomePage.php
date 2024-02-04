@@ -1,6 +1,5 @@
-
 <?php
-  session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +22,7 @@
   <head>
     <div class="navbar">
       <div class="logo">
+        <a href="HomePage.php"></a>
         <h1>SneakPeak</h1>
       </div>
       <div class="nav-list">
@@ -63,7 +63,7 @@
 
   <!-- hero section -->
 
- 
+
   <?php if (isset($_SESSION['authenticated_user']['user_role']) && $_SESSION['authenticated_user']['user_role'] === 'admin'): ?>
     <div>
       <a href="dashboard.php">
@@ -85,7 +85,10 @@
     <header>
       <img id="slideshow" src="./img/shoe1.jpg" />
     </header>
-    <button id="changeSlide">Next</button>
+    <div class="buttonSlide">
+      <button id="changeSlide">Next</button>
+    </div>
+
   </div>
 
 
@@ -104,6 +107,7 @@
       <button>Learn More</button>
     </div>
     <div class="section-two">
+
       <h4>Gift Card</h4>
       <h1>The best shoe brand</h1>
       <span>we care for your comfiness</span>

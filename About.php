@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="holder2">
-        <img src="/img/aboutUs.jpg" alt="aboutUs" />
+        <img src="img/aboutUs.jpg" alt="aboutUs" />
       </div>
     </div>
   </section>

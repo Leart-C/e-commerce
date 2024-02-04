@@ -57,6 +57,22 @@
   justify-content: center;
 }
 
+.buttonSlide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#changeSlide {
+  cursor: pointer;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
 .container h1 {
   font-size: 100px;
   color: #fff;
@@ -101,6 +117,10 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
 }
 
 #slideshow {
@@ -174,11 +194,12 @@ header {
 
 #sales {
   padding: 20px 80px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: url(/img/banner.jpg);
+  background-image: url(img/banner.jpg);
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -216,8 +237,7 @@ header {
 }
 
 #section-holder {
-  /* padding: 30px 80px; */
-  /* display: flex; */
+  display: flex;
   width: 100%;
   height: 50vh;
   justify-content: space-between;
@@ -260,7 +280,7 @@ header {
 }
 #section-holder .section-two {
   width: 600px;
-  background-image: url(/img/shoe-b-2.jpg);
+  background-image: url(img/shoe-b-2.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -398,8 +418,6 @@ header {
 
 #best-choices {
   width: 100%;
-  height: 85vh;
-  padding: 20px 80px;
 }
 #best-choices h1 {
   padding: 30px 80px;
@@ -784,4 +802,30 @@ form .input-field {
 .login-link a {
   justify-content: center;
   align-items: center;
+}
+
+.container-box input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.container-box a {
+  text-decoration: none;
+}
+
+.container-box-login {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container-box-login {
+  background-color: lightblue;
 }
